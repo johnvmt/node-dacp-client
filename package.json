@@ -1,0 +1,14 @@
+{
+  "name": "dacp-client",
+  "version": "0.0.1",
+  "author": {
+    "name": "John Murphy-Teixidor",
+    "email": "johnvmt@gmail.com"
+  },
+  "dependencies": {
+    "request": "2.74.x",
+    "mdns": "2.3.x",
+    "daap": "https://github.com/johnvmt/daap.git"
+  },
+  "main": "client.js"
+}
