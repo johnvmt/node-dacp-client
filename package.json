@@ -1,9 +1,15 @@
 {
   "name": "dacp-client",
+  "description": "Control DACP servers, like Apple iTunes",
   "version": "0.0.1",
   "author": {
     "name": "John Murphy-Teixidor",
     "email": "johnvmt@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnvmt/node-dacp-client"
   },
   "dependencies": {
     "request": "2.74.x",
