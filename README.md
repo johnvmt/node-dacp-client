@@ -32,6 +32,7 @@ After the pairing process starts, a remote icon will appear in iTunes. Enter the
 ## Controlling DACP Server ##
 
 After pairing, you can use the combination of service name or IP/hostname with the pair code to connect to the DACP server and control it
+Control examples from http://dacp.jsharkey.org/
 
     // Use your own server config. See the pairing process for instructions on getting this information
     var serverConfig = { pair: '21C22EDCEAD6A892', serviceName: '5380431DD0AFAB75' }
@@ -44,7 +45,6 @@ After pairing, you can use the combination of service name or IP/hostname with t
     client.on('status', function(status) {
        console.log("STATUS", status);
     });
-    
 
     client.on('playstatus', function(status) {
         // Get the server's status each time it changes (shows which song is playing, status etc.
@@ -55,6 +55,16 @@ After pairing, you can use the combination of service name or IP/hostname with t
         // Get the player's status
         console.log(error, response);
     });
+    
+    client.sessionRequest('ctrl-int/1/playpause', function(error, response) {
+		// Play or pause
+		console.log(error, response);
+	});
+	
+	client.sessionRequest('ctrl-int/1/playpause', function(error, response) {
+		// Play or pause
+		console.log(error, response);
+	});   
     
 ## TODOs ##
 
